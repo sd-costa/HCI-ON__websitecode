@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <meta name="description" content="">
+      <meta name="author" content="Simone Dornelas Costa">
+      <meta name="generator" content="Simone Dornelas Costa">
+      <title>HCI-ON</title>
+      <!-- favicon -->
+      <link rel="icon" href="images/favicon.svg" sizes="32x32" type="image/svg">
+
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" type="text/css" href="bootstrap/4.6.1-dist/css/bootstrap.min.css">
+      
+      
+      <!-- ICONS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+      <style>   
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      </style>
+     
+     <!-- Custom styles for this template -->
+     <link href="bootstrap/css/carousel.css" rel="stylesheet">
+      
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		  <script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'G-WXTXYYCXMP');
+		  </script>
+
+    </head>
+
+  <body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="HCI-ON.html">HCI-ON</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            The Network
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="HCI-ON.html">HCI-ON</a>
+            <a class="dropdown-item" href="HCI-ON.html#architecture">Architecture</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionmechanism">Evolution Mechanism</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionseon">Relationship with SEON</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Networked Ontologies
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        
+            <a class="dropdown-item disabled">Foundational Layer</a>
+            <a class="dropdown-item" href="UFO.html">UFO</a>
+
+            <a class="dropdown-item disabled">Core Layer</a>
+            <a class="dropdown-item" href="HCIO.html">HCIO</a>
+
+            <a class="dropdown-item disabled">Domain Layer</a>
+            <a class="dropdown-item" href="HCIDO.html">HCIDO</a>
+            <a class="dropdown-item" href="HCIEO.html">HCIEO</a>
+            <a class="dropdown-item" href="UIT&EO.html">UIT&EO</a>
+            <a class="dropdown-item" href="HCIMO.html">HCIMO</a>
+            <a class="dropdown-item" href="CUO.html">CUO</a>
+            <a class="dropdown-item" href="UCO.html">UCO</a>
+            <a class="dropdown-item" href="HCIQCO.html">HCIQCO</a>
+            
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a> 
+            <a class="dropdown-item" href="NetworkGraph.html">Graph</a>
+            <a class="dropdown-item" href="NetworkStats.html">Stats</a>
+            <a class="dropdown-item" href="videos.html">Videos</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            QAPO
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#ontologydescription">Ontology Description</a> 
+            <a class="dropdown-item" href="#relatedontologies">Related Ontologies</a>
+            <a class="dropdown-item" href="#ontologymodels">Ontology Models</a>
+            <a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a>
+            <a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+	<!-- Begin page content -->
+  <main role="main" class="container-fluid">	
+
+			<div class="bg-light p-5 rounded">
+				<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
+  			<h1 class="featurette-heading">The Quality Assurance Process Ontology (QAPO)</h1>
+  			<p class="lead text-right font-italic"><i class="bi bi-star-fill"></i> domain ontology from SEON</p>
+  		</div>
+
+			<hr> 
+			   		
+  		<div class="p-5 rounded" id="ontologydescription">
+				<h2 class="featurette-heading">1. Ontology Description</h2>
+				<p class="lead" align="justify">The Quality Assurance Process Ontology (QAPO) aims at representing the activities, artifacts and stakeholders involved in the Quality Assurance Process. Since QAPO can be applied in the context of several SE subdomains, it represents some general notions applicable for diverse SEON processes and artifacts.</p>
+  		</div>
+
+			<hr>
+
+			<div class="p-5 rounded" id="relatedontologies">
+				<h2 class="featurette-heading">2. Related Ontologies</h2>
+				<p class="lead">Networked ontologies used by QAPO:</p>	
+				
+				<div class="table-responsive my-5">
+					
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Ontology</th>
+								<th scope="col">Relation</th>
+								<th scope="col">Integration Level</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td><a class="text-dark" href="http://dev.nemo.inf.ufes.br/seon/SPO.html" target="_blank">SPO - Software Process Ontology</a></td><td>All QAPO concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
+
+						</tbody>
+					</table>
+					<caption><small>Ontologies (re)used by QAPO.</small></caption>
+				</div>
+
+			</div>	
+
+			<hr>
+  	
+			<div class="p-5 rounded" id="ontologymodels">
+				<h2 class="featurette-heading">3. Ontology Models</h2>
+				<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the QAPO.</p>
+<div class="container-fluid my-5" align="center"><img src="images/QAPO.png" width="1066" class="map img-fluid" usemap="#QAPO"><map name="QAPO">
+<area shape="rect" coords="724,196,850,243" href="SysSwO.html#SysSwO_Software+Artifact" target="_blank" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
+<area shape="rect" coords="539,337,686,367" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" target="_blank" title="Artifact composed of other Artifacts.">
+<area shape="rect" coords="622,301,758,331" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" target="_blank" title="Artifact that is not decomposed into other Artifacts.">
+<area shape="rect" coords="666,389,773,419" href="SysSwO.html#SysSwO_Software+Item" target="_blank" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
+<area shape="rect" coords="538,389,665,419" href="SysSwO.html#SysSwO_Software+Product" target="_blank" title="One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.">
+<area shape="rect" coords="923,389,1049,419" href="SysSwO.html#SysSwO_Information+Item" target="_blank" title="Relevant information for human use, produced or used by Performed Activity.">
+<area shape="rect" coords="860,389,918,419" href="SysSwO.html#SysSwO_Model" target="_blank" title="A representation (abstraction) of a process or system from a particular perspective.">
+<area shape="rect" coords="774,389,858,419" href="SysSwO.html#SysSwO_Document" target="_blank" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
+<area shape="rect" coords="127,10,264,40" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Process" target="_blank" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
+<area shape="rect" coords="266,329,473,359" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Composite+Activity" target="_blank" title="Performed Activity composed of other Performed Activities.">
+<area shape="rect" coords="372,289,554,319" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Simple+Activity" target="_blank" title="Performed Activity that is not further decomposed into other Performed Activities.">
+<area shape="rect" coords="46,76,235,106" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+General+Process" target="_blank" title="The overall Performed Process executed in a specific Project or Organization, which is necessarily composed of Specific Performed Processes.">
+<area shape="rect" coords="150,122,339,152" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Specific+Process" target="_blank" title="Performed Process that is part of the General Performed Process of a Project or Organization, necessarily composed of at least two Performed Activities.">
+<area shape="rect" coords="330,196,467,242" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Activity" target="_blank" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
+<area shape="rect" coords="51,196,147,242" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Stakeholder" target="_blank" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="153,455,339,485" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Quality+Assurance+Process" target="_blank" title="Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.">
+<area shape="rect" coords="276,496,468,526" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Quality+Assurance+Planning" target="_blank" title="Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.">
+<area shape="rect" coords="276,538,431,568" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Adherence+Evaluation" target="_blank" title="Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.">
+<area shape="rect" coords="276,707,442,737" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Noncompliance+Control" target="_blank" title="Activity for managing the registered noncompliances until their effective resolution.">
+<area shape="rect" coords="425,579,561,609" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Artifact+Evaluation" target="_blank" title="Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.">
+<area shape="rect" coords="425,620,562,650" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Process+Evaluation" target="_blank" title="Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.">
+<area shape="rect" coords="425,662,628,692" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Noncompliance+Identification" target="_blank" title="Activity for registering the noncompliances identified in processes and artifacts.">
+<area shape="rect" coords="425,752,611,782" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Noncompliance+Resolution" target="_blank" title="Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.">
+<area shape="rect" coords="425,794,592,824" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Noncompliance+Closing" target="_blank" title="Activity for finishing a noncompliance once it is satisfactorily solved.">
+<area shape="rect" coords="38,497,159,527" href="http://dev.nemo.inf.ufes.br/seon/SPMO.html#SPMO_Project+Manager" target="_blank" title="Stakeholder responsible for managing a Project.">
+<area shape="rect" coords="38,538,154,568" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Quality+Auditor" target="_blank" title="Stakeholder responsible for conducting objective evaluations.">
+<area shape="rect" coords="646,456,740,486" href="http://dev.nemo.inf.ufes.br/seon/SPMO.html#SPMO_Project+Plan" target="_blank" title="Document describing the planning of a Project, to be used as the basis for project management.">
+<area shape="rect" coords="646,497,810,527" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Quality+Assurance+Plan" target="_blank" title="Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.">
+<area shape="rect" coords="795,575,926,613" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Evaluated+Artifact" target="_blank" title="Artifact objectively evaluated.">
+<area shape="rect" coords="706,539,837,569" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Evaluation+Report" target="_blank" title="Document describing the evaluation results and identified issues.">
+<area shape="rect" coords="832,663,1003,693" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Noncompliance+Register" target="_blank" title="Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.">
+<area shape="rect" coords="38,707,233,737" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Noncompliance+Responsible" target="_blank" title="Stakeholder responsible for solving a noncompliance.">
+<area shape="rect" coords="867,753,1051,783" href="http://dev.nemo.inf.ufes.br/seon/SPMO.html#SPMO_Corrective+Action+Register" target="_blank" title="Information Item describing an action to eliminate the cause or reduce the likelihood of recurrence of a detected nonconformity or other undesirable situation. [ISO/IEC/IEEE 24765]">
+<area shape="rect" coords="795,618,928,656" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html#QAPO_Evaluated+Process" target="_blank" title="Process objectively evaluated.">
+<area shape="rect" coords="63,603,165,633" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_Project+Team" target="_blank" title="">
+<area shape="rect" coords="24,289,156,319" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Team+Stakeholder" target="_blank" title="Team interested or affected by the process activities or results.">
+<area shape="rect" coords="56,329,197,359" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Person+Stakeholder" target="_blank" title="Person interested or affected by the process activities or their results."></map>
+<p align="center"><span class="font-weight-bold">Figure 1. </span>QAPO conceptual model.</p></div>
+<p align="justify" class="lead">The Quality Assurance Process is a Process with the purpose of conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements. It is composed of three main activities. (1) Quality Assurance Planning plans the quality assurance activities, resulting in a Quality Assurance Plan. (2) Adherence Evaluation objectively evaluates the adherence of processes and products to the applicable requirements, registering the identified issues. It has three sub-actvities: Artifact Evaluation, for evaluating the adherence of products and deliverables; Process Evaluation, for evaluating the adherence of processes and activities; and Noncompliance Identification, for registering the noncompliances identified in processes and artifacts. (3) Noncompliance Control manages the registered noncompliances until their effective resolution. It is decomposed into two sub-activities: Noncompliance Resolution, for analyzing a Noncompliance, planning and executing the applicable Corrective Actions to its resolution; and Noncompliance Closing, for finishing a noncompliance once it is satisfactorily solved.<br/>The process involves four Stakeholders: the Quality Auditor, who is responsible for conducting the objective evaluations; the Noncompliance Responsible, who is assigned for solving a noncompliance; the Project Manager, who is in charge of planning the Quality Assurance Process; and Project Team, who is involved in the objective evaluations of its project.</p>
+</p>					
+			</div>
+
+			<hr>
+
+			<div class="p-5 rounded" id="conceptsdefinition">
+				<h2 class="featurette-heading">4. Concepts Definition</h2>
+				<p class="lead">The following table shows the definitions for QAPO concepts.</p>		
+				
+				<div class="table-responsive my-5">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Concept</th>
+								<th scope="col">Definition</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td><p id="QAPO_Adherence+Evaluation"><span class="font-weight-bold">Adherence Evaluation</span><a class="text-muted" href=#QAPO_Adherence+Evaluation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.</p></td></tr>
+<tr><td><p id="QAPO_Artifact+Evaluation"><span class="font-weight-bold">Artifact Evaluation</span><a class="text-muted" href=#QAPO_Artifact+Evaluation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.</p></td></tr>
+<tr><td><p id="QAPO_Evaluated+Artifact"><span class="font-weight-bold">Evaluated Artifact</span><a class="text-muted" href=#QAPO_Evaluated+Artifact_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Artifact objectively evaluated.</p></td></tr>
+<tr><td><p id="QAPO_Evaluated+Process"><span class="font-weight-bold">Evaluated Process</span><a class="text-muted" href=#QAPO_Evaluated+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Process objectively evaluated.</p></td></tr>
+<tr><td><p id="QAPO_Evaluation+Report"><span class="font-weight-bold">Evaluation Report</span><a class="text-muted" href=#QAPO_Evaluation+Report_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document describing the evaluation results and identified issues.</p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Closing"><span class="font-weight-bold">Noncompliance Closing</span><a class="text-muted" href=#QAPO_Noncompliance+Closing_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for finishing a noncompliance once it is satisfactorily solved.</p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Control"><span class="font-weight-bold">Noncompliance Control</span><a class="text-muted" href=#QAPO_Noncompliance+Control_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for managing the registered noncompliances until their effective resolution.</p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Identification"><span class="font-weight-bold">Noncompliance Identification</span><a class="text-muted" href=#QAPO_Noncompliance+Identification_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for registering the noncompliances identified in processes and artifacts.</p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Register"><span class="font-weight-bold">Noncompliance Register</span><a class="text-muted" href=#QAPO_Noncompliance+Register_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a neglected activity in a process; a document wrongly specified.</span></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Resolution"><span class="font-weight-bold">Noncompliance Resolution</span><a class="text-muted" href=#QAPO_Noncompliance+Resolution_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.</p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Responsible"><span class="font-weight-bold">Noncompliance Responsible</span><a class="text-muted" href=#QAPO_Noncompliance+Responsible_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for solving a noncompliance.</p></td></tr>
+<tr><td><p id="QAPO_Process+Evaluation"><span class="font-weight-bold">Process Evaluation</span><a class="text-muted" href=#QAPO_Process+Evaluation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.</p></td></tr>
+<tr><td><p id="QAPO_Quality+Assurance+Plan"><span class="font-weight-bold">Quality Assurance Plan</span><a class="text-muted" href=#QAPO_Quality+Assurance+Plan_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.</p></td></tr>
+<tr><td><p id="QAPO_Quality+Assurance+Planning"><span class="font-weight-bold">Quality Assurance Planning</span><a class="text-muted" href=#QAPO_Quality+Assurance+Planning_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.</p></td></tr>
+<tr><td><p id="QAPO_Quality+Assurance+Process"><span class="font-weight-bold">Quality Assurance Process</span><a class="text-muted" href=#QAPO_Quality+Assurance+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.</p></td></tr>
+<tr><td><p id="QAPO_Quality+Auditor"><span class="font-weight-bold">Quality Auditor</span><a class="text-muted" href=#QAPO_Quality+Auditor_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for conducting objective evaluations.</p></td></tr>
+
+						</tbody>
+						<caption><small>QAPO concepts definition.</small></caption>
+					</table>
+				</div>
+
+			</div>
+
+			<hr>		
+
+			<div class="p-5 rounded" id="detailedconcepts">
+				<h2 class="featurette-heading">5. Detailed Concepts</h2>
+				<p class="lead">Quality Assurance Process Ontology (QAPO) detailed concepts.</p>					
+				<hr><div class="container-fluid" id="QAPO_Adherence+Evaluation_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Adherence Evaluation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Adherence Evaluation</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Performed Composite Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Adherence Evaluation <>-- Artifact Evaluation<br/>
+Adherence Evaluation <>-- Process Evaluation<br/>
+Adherence Evaluation <>-- Noncompliance Identification<br/>
+Adherence Evaluation creates Evaluation Report<br/>
+Project Team participates in Adherence Evaluation<br/>
+Quality Assurance Process <>-- Adherence Evaluation<br/>
+Quality Auditor is in charge of Adherence Evaluation<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Artifact+Evaluation_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Artifact Evaluation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Artifact Evaluation</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Artifact Evaluation uses Evaluated Artifact<br/>
+Adherence Evaluation <>-- Artifact Evaluation<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Evaluated+Artifact_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Evaluated Artifact</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Evaluated Artifact</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SysSwO::Software Artifact</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Artifact objectively evaluated.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Artifact Evaluation uses Evaluated Artifact<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Evaluated+Process_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Evaluated Process</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Evaluated Process</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Performed Process</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Process objectively evaluated.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Process Evaluation uses Evaluated Process<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Evaluation+Report_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Evaluation Report</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Evaluation Report</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SysSwO::Document</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Document describing the evaluation results and identified issues.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Adherence Evaluation creates Evaluation Report<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Closing_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Noncompliance Closing</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Closing</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for finishing a noncompliance once it is satisfactorily solved.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Noncompliance Control <>-- Noncompliance Closing<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Control_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Noncompliance Control</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Control</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Performed Composite Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for managing the registered noncompliances until their effective resolution.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Noncompliance Control <>-- Noncompliance Resolution<br/>
+Noncompliance Control <>-- Noncompliance Closing<br/>
+Noncompliance Control changes Noncompliance Register<br/>
+Noncompliance Responsible participates in Noncompliance Control<br/>
+Quality Assurance Process <>-- Noncompliance Control<br/>
+Quality Auditor is in charge of Noncompliance Control<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Identification_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Noncompliance Identification</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Identification</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for registering the noncompliances identified in processes and artifacts.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Noncompliance Identification creates Noncompliance Register<br/>
+Adherence Evaluation <>-- Noncompliance Identification<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Register_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Noncompliance Register</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Register</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SysSwO::Information Item</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> a neglected activity in a process; a document wrongly specified.</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Noncompliance Register (0..*) <>-- (0..*) Corrective Action Register<br/>
+Noncompliance Control changes Noncompliance Register<br/>
+Noncompliance Identification creates Noncompliance Register<br/>
+Configuration Audit Report depicts Noncompliance Register<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Resolution_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Noncompliance Resolution</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Resolution</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Noncompliance Resolution creates Corrective Action Register<br/>
+Noncompliance Control <>-- Noncompliance Resolution<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Responsible_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Noncompliance Responsible</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Responsible</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Person Stakeholder</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Stakeholder responsible for solving a noncompliance.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Noncompliance Responsible participates in Noncompliance Control<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Process+Evaluation_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Process Evaluation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Process Evaluation</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Process Evaluation uses Evaluated Process<br/>
+Adherence Evaluation <>-- Process Evaluation<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Quality+Assurance+Plan_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Quality Assurance Plan</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Quality Assurance Plan</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SysSwO::Document</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Quality Assurance Planning creates Quality Assurance Plan<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Quality+Assurance+Planning_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Quality Assurance Planning</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Quality Assurance Planning</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Performed Composite Activity</p><p><i class="bi bi-diagram-2"></i>  SPO::Performed Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Quality Assurance Planning uses Project Plan<br/>
+Quality Assurance Planning creates Quality Assurance Plan<br/>
+Project Manager is in charge of Quality Assurance Planning<br/>
+Quality Assurance Process <>-- Quality Assurance Planning<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Quality+Assurance+Process_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Quality Assurance Process</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Quality Assurance Process</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Performed Specific Process</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Quality Assurance Process <>-- Quality Assurance Planning<br/>
+Quality Assurance Process <>-- Adherence Evaluation<br/>
+Quality Assurance Process <>-- Noncompliance Control<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="QAPO_Quality+Auditor_detail"><h4><i class="bi bi-diagram-3"></i> QAPO::Quality Auditor</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Quality Auditor</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Person Stakeholder</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Stakeholder responsible for conducting objective evaluations.</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">Quality Auditor is in charge of Adherence Evaluation<br/>
+Quality Auditor is in charge of Noncompliance Control<br/>
+</code></p></div></div></div>
+
+
+			</div>
+			
+		</main>
+	
+    <footer class="p-5 rounded border-top">
+    	<div class="row justify-content-md-center">
+	      <div class="col-md-auto">
+	    		<h6>Copyright</h6>
+	    		<div class="d-inline">
+					  	<i class="material-icons text-muted align-middle">copyright</i>
+				  </div>
+					<div class="d-inline">
+				  	<span class="text-muted"><small> 2022 Simone Dornelas Costa</small></span>
+				  </div>
+				</div>
+				
+	    	<div class="col-md-auto">
+	  		  <h6>Powered by</h6>
+	  		  <ul class="list-unstyled text-small">
+	  		  	<li>
+	  		  		<a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank"><img src="images/logoo_nemo.svg" width="50px"><br/>
+	  		  		NEMO</a>
+	  		  	</li>
+	  		  </ul>
+	    	</div>
+
+	    	<div class="col-md-auto">
+	    		<h5>QAPO</h5>
+	    		<ul class="list-unstyled text-small">
+	    			<li>
+	    				<small>
+	    					<a class="text-muted" href="#">Quality Assurance Process Ontology</a>
+	    				</small>	
+	    			</li>
+	    			<li>
+	    				<small>
+	    					<a class="text-muted" href="#">Domain ontology from SEON</a>
+    					</small>
+	    			</li>
+	    			<li>
+	    				<small>
+		    				<a class="text-muted" href="#"></a>
+	    				</small>
+	    			</li>
+	    		</ul>
+	    	</div>
+
+    		<div class="col-md-auto">
+	    		<h6>Contact us</h6>
+	    		<ul class="list-unstyled text-small">
+	    			<li>
+	    				<div class="d-inline">
+	    					<i class="material-icons text-muted align-middle">email</i>
+	    				</div>
+	    				<div class="d-inline">
+	    					<a href="mailto:simone.costa@ufes.br" class="text-muted"><small>simone.costa@ufes.br</small></a>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="d-inline">
+	    					<i class="material-icons text-muted align-middle">email</i>
+	  					</div>
+	    				<div class="d-inline">
+	    					<a href="mailto:monalessa@inf.ufes.br" class="text-muted"><small>monalessa@inf.ufes.br</small></a>
+	    				</div>
+	    			</li>
+	    		</ul>
+	    	</div>
+
+	    </div>
+	    
+			<div class="row mt-3 justify-content-md-center">
+				<div class="col-md-auto">
+					<small>
+						<span class="text-muted">
+						Wed Dec 22 20:25:05 BRT 2021
+						</span>
+					</small>
+				</div>
+			</div>
+
+    </footer>
+	   
+	    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	  <script type="text/javascript" src="bootstrap/jquery/jquery-3.5.1.slim.min.js"></script>
+
+	  <script type="text/javascript" src="bootstrap/js/popper-1.16.1.min.js"></script>
+
+	  <script type="text/javascript" src="bootstrap/4.6.1-dist/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="maphilight.js"></script>
+
+		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
+			$(function() {
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  //location.reload();
+				});
+			});			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <meta name="description" content="">
+      <meta name="author" content="Simone Dornelas Costa">
+      <meta name="generator" content="Simone Dornelas Costa">
+      <title>HCI-ON</title>
+      <!-- favicon -->
+      <link rel="icon" href="images/favicon.svg" sizes="32x32" type="image/svg">
+
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" type="text/css" href="bootstrap/4.6.1-dist/css/bootstrap.min.css">
+      
+      
+      <!-- ICONS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+      <style>   
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      </style>
+     
+     <!-- Custom styles for this template -->
+     <link href="bootstrap/css/carousel.css" rel="stylesheet">
+      
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		  <script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'G-WXTXYYCXMP');
+		  </script>
+
+    </head>
+
+  <body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="HCI-ON.html">HCI-ON</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            The Network
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="HCI-ON.html">HCI-ON</a>
+            <a class="dropdown-item" href="HCI-ON.html#architecture">Architecture</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionmechanism">Evolution Mechanism</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionseon">Relationship with SEON</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Networked Ontologies
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        
+            <a class="dropdown-item disabled">Foundational Layer</a>
+            <a class="dropdown-item" href="UFO.html">UFO</a>
+
+            <a class="dropdown-item disabled">Core Layer</a>
+            <a class="dropdown-item" href="HCIO.html">HCIO</a>
+
+            <a class="dropdown-item disabled">Domain Layer</a>
+            <a class="dropdown-item" href="HCIDO.html">HCIDO</a>
+            <a class="dropdown-item" href="HCIEO.html">HCIEO</a>
+            <a class="dropdown-item" href="UIT&EO.html">UIT&EO</a>
+            <a class="dropdown-item" href="HCIMO.html">HCIMO</a>
+            <a class="dropdown-item" href="CUO.html">CUO</a>
+            <a class="dropdown-item" href="UCO.html">UCO</a>
+            <a class="dropdown-item" href="HCIQCO.html">HCIQCO</a>
+            
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a> 
+            <a class="dropdown-item" href="NetworkGraph.html">Graph</a>
+            <a class="dropdown-item" href="NetworkStats.html">Stats</a>
+            <a class="dropdown-item" href="videos.html">Videos</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            HCIEO
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#ontologydescription">Ontology Description</a> 
+            <a class="dropdown-item" href="#relatedontologies">Related Ontologies</a>
+            <a class="dropdown-item" href="#ontologymodels">Ontology Models</a>
+            <a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a>
+            <a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+	<!-- Begin page content -->
+  <main role="main" class="container-fluid">	
+
+			<div class="bg-light p-5 rounded">
+				<div class="container-fluid d-flex justify-content-end"><span class="badge badge-dark">version 1.0</span></div>
+  			<h1 class="featurette-heading">The Human-Computer Interaction Evaluation Ontology (HCIEO)</h1>
+  			<p class="lead text-right font-italic"><i class="bi bi-star-fill"></i> domain ontology from HCI-ON</p>
+  		</div>
+
+			<hr> 
+			   		
+  		<div class="p-5 rounded" id="ontologydescription">
+				<h2 class="featurette-heading">1. Ontology Description</h2>
+				<p class="lead" align="justify">The Human-Computer Interaction Evaluation Ontology (HCIEO), a reference ontology that aims to provide a common conceptualization of HCI Evaluation and is a domain ontology of HCI-ON.<br/><br/>The purpose of the HCI Evaluation Ontology (HCIEO) is to establish an explicit and shared conceptualization of HCI evaluation by means of a human-centred design view, describing the main concepts involved in this context.<br/><br/>HCIEO covers relevant aspects of the HCI evaluation, such as the main involved artifacts, considered evaluation criteria, evaluated characteristics, involved agents and measures that can be used to evaluate an interactive computer system.</p>
+  		</div>
+
+			<hr>
+
+			<div class="p-5 rounded" id="relatedontologies">
+				<h2 class="featurette-heading">2. Related Ontologies</h2>
+				<p class="lead">Networked ontologies used by HCIEO:</p>	
+				
+				<div class="table-responsive my-5">
+					
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Ontology</th>
+								<th scope="col">Relation</th>
+								<th scope="col">Integration Level</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td><a class="text-dark" href="UFO.html">UFO - Unified Foundational Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+<tr><td><a class="text-dark" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+<tr><td><a class="text-dark" href="http://dev.nemo.inf.ufes.br/seon/RSRO.html" target="_blank">RSRO - Reference Software Requirements Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+<tr><td><a class="text-dark" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></td><td>Most HCIEO concepts extend concepts from HCIO.</td><td style="text-align:center">High</td></tr>
+<tr><td><a class="text-dark" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+<tr><td><a class="text-dark" href="http://dev.nemo.inf.ufes.br/seon/COM.html" target="_blank">COM - Core Ontology on Measurement (external)</a></td><td>Most HCIEO concepts extend concepts from COM.</td><td style="text-align:center">Medium</td></tr>
+<tr><td><a class="text-dark" href="SysSwO.html" target="_blank">SysSwO - System and Software Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+<tr><td><a class="text-dark" href="http://dev.nemo.inf.ufes.br/seon/SPO.html" target="_blank">SPO - Software Process Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+
+						</tbody>
+					</table>
+					<caption><small>Ontologies (re)used by HCIEO.</small></caption>
+				</div>
+
+			</div>	
+
+			<hr>
+  	
+			<div class="p-5 rounded" id="ontologymodels">
+				<h2 class="featurette-heading">3. Ontology Models</h2>
+				<p class="lead"><p class="lead">Figure 1 presents the packages of the HCIEO Modularization.</p>
+<div class="container-fluid my-5" align="center"><img src="images/HCIEO Modularization.png" width="965" class="map img-fluid" usemap="#HCIEO Modularization"><map name="HCIEO Modularization">
+<area shape="rect" coords="454,524,573,592" href="HCIEO.html#HCIEO_Central+View_section" target="" title="">
+<area shape="rect" coords="616,524,789,592" href="HCIEO.html#HCIEO_Complementary+View_section" target="" title="">
+<area shape="rect" coords="673,231,803,299" href="HCIO.html#HCIO_HC+Interaction_section" target="" title="">
+<area shape="rect" coords="456,302,676,370" href="HCIO.html#HCIO_Interactive+Computer+System_section" target="" title="">
+<area shape="rect" coords="824,304,892,372" href="HCIO.html#HCIO_User_section" target="" title="">
+<area shape="rect" coords="440,183,925,387" href="HCIO.html#HCIO_HCIO_section" target="" title="">
+<area shape="rect" coords="438,463,803,612" href="HCIEO.html#HCIEO_HCIEO_section" target="" title="">
+<area shape="rect" coords="843,503,925,571" href="HCIDO.html#HCIDO_HCIDO_section" target="" title="">
+<area shape="rect" coords="172,311,236,379" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_SPO_section" target="_blank" title="">
+<area shape="rect" coords="160,207,248,275" href="SysSwO.html#SysSwO_SysSwO_section" target="_blank" title="">
+<area shape="rect" coords="44,267,114,335" href="http://dev.nemo.inf.ufes.br/seon/COM.html#COM_COM_section" target="_blank" title="">
+<area shape="rect" coords="114,531,188,599" href="http://dev.nemo.inf.ufes.br/seon/RSRO.html#RSRO_RSRO_section" target="_blank" title="">
+<area shape="rect" coords="264,10,386,78" href="UFO.html#UFO_UFO_section" target="" title="">
+<area shape="rect" coords="423,145,940,403" href="index.html" target="" title="">
+<area shape="rect" coords="423,429,940,626" href="index.html" target="" title="">
+<area shape="rect" coords="25,160,277,409" href="http://dev.nemo.inf.ufes.br/seon/" target="_blank" title="">
+<area shape="rect" coords="26,475,278,615" href="http://dev.nemo.inf.ufes.br/seon/" target="_blank" title="">
+<area shape="rect" coords="10,113,292,630" href="http://dev.nemo.inf.ufes.br/seon/" target="_blank" title="">
+<area shape="rect" coords="399,100,955,641" href="index.html" target="" title=""></map>
+<p align="center"><span class="font-weight-bold">Figure 1. </span>HCIEO Modularization.</p></div>
+<p align="justify" class="lead"></p>
+
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="HCIEO_Central+View_section">3.1.  Central View</h3>
+<p class="lead" align="justify"></p>
+<p class="lead">Figure 2 presents the conceptual model of the HCIEO Central View subontology.</p>
+<div class="container-fluid my-5" align="center"><img src="images/HCIEO Central View.png" width="1895" class="map img-fluid" usemap="#HCIEO Central View"><map name="HCIEO Central View">
+<area shape="rect" coords="553,690,715,720" href="HCIEO.html#HCIEO_HCI+Evaluation+Method" target="" title="A Procedure describing the actions to be performed by the HCI Evaluator to perform a HCI Evaluation.">
+<area shape="rect" coords="1276,874,1438,904" href="HCIEO.html#HCIEO_HCI+Evaluation+Artifact" target="" title="Object intentionally made to specify evaluation criteria in the context of an evaluation.">
+<area shape="rect" coords="1470,1006,1675,1058" href="HCIEO.html#HCIEO_HCI+Evaluation+Criteria" target="" title="Conditions, or capacity needed (Requirement), used to evaluate interactive computer system’s quality characteristics. It can be determined by the HCI evaluation method of a certain HCI evaluation and may be related to user requirements.">
+<area shape="rect" coords="866,1027,1027,1057" href="HCIEO.html#HCIEO_HCI+Evaluation+Report" target="" title="Document that presents evaluation results and other relevant information such as the considered HCI Evaluation Criteria. @Ex.: Usability test report. <source>adapted from
+_____________
+ISO/IEC 14698-5:1998
+Evaluation report: Document that presents evaluation results and other information relevant to an evaluation
+The content of evaluation reports can vary based on the objectives of the evaluation (ISO/IEC TR 25060:2010).">
+<area shape="rect" coords="66,764,203,794" href="HCIEO.html#HCIEO_HCI+Evaluator+Goal" target="" title="The evaluation intended outcome.">
+<area shape="rect" coords="373,728,538,758" href="HCIEO.html#HCIEO_HCI+Evaluator+Intention" target="" title="Intention that inheres in a HCI Evaluator, causing him to perform an HCI Evaluation.">
+<area shape="rect" coords="13,874,118,904" href="HCIEO.html#HCIEO_HCI+Evaluator" target="" title="HCI Evaluator & Individual or organization (Stakeholder) that performs an HCI Evaluation.">
+<area shape="rect" coords="786,783,1166,847" href="HCIEO.html#HCIEO_HCI+Evaluation" target="" title="Intentional event (i.e., a Complex Action) caused by the HCI Evaluator Intention and that consists in the systematic determination of the extent to which an Interactive Computer System (or its User Interface) quality characteristics meet the HCI Evaluation criteria considered in the evaluation.">
+<area shape="rect" coords="1380,722,1599,752" href="HCIEO.html#HCIEO_HCI+Quality+Characteristic" target="" title="Characteristic expected in an Interactive Computer System (in software or hardware constituents), e.g., usability (software), screen size of a smart watch (hardware), among others. It can refer to the whole Interactive Computer System or part of it (e.g., its User Interface an Input Equipment).">
+<area shape="rect" coords="1054,88,1222,118" href="UFO.html#UFO_Complex+Action" target="" title="A Complex Action is composed of two or more Participations. These participations can themselves be intentional (i.e., be themselves actions) or unintentional events. For @ex, the stabbing of Caesar by Brutus includes the intentional participation of Brutus and the unintentional. participation of Caesar and the knife. In a complex action, at least one participation should be intentional, i.e., an action contribution">
+<area shape="rect" coords="205,78,338,108" href="UFO.html#UFO_Goal" target="" title="The propositional content of an Intention.">
+<area shape="rect" coords="484,20,610,50" href="UFO.html#UFO_Intention" target="" title="Intentions are desired state of affairs (situations) for which the agent commits at pursuing (@e.g., the Intention of going to a beach resort for the next summer break).">
+<area shape="rect" coords="1262,88,1371,118" href="UFO.html#UFO_Object" target="" title="Non-agentive substantial individuals. Objects can be Physical or Social.">
+<area shape="rect" coords="41,173,137,203" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Stakeholder" target="_blank" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="37,78,143,108" href="UFO.html#UFO_Agent" target="" title="Agents are Substantials (Functional Complexes or Collectives) that can bear special kinds of Intrinsic Moments named Intentional Moments.">
+<area shape="rect" coords="1615,303,1719,333" href="http://dev.nemo.inf.ufes.br/seon/RSRO.html#RSRO_Requirement" target="_blank" title="Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.">
+<area shape="rect" coords="493,240,577,270" href="SysSwO.html#SysSwO_Document" target="_blank" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
+<area shape="rect" coords="664,173,747,203" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Procedure" target="_blank" title="Normative Description prescribing a defined way for performing process activities.">
+<area shape="rect" coords="817,88,1026,118" href="UFO.html#UFO_Normative+Description" target="" title="Normative Descriptions are Social Objects that define one or more rules/norms recognized by at least one Social Agent and that can define other Social objects (the crown of the king of Spain) or Social Roles (such as president, PhD candidate or pedestrian). @Examples of normative descriptions include the Brazilian Constitution, the Federal University of Espírito Santo PhD program regulation, but also a set of directives on how to perform some actions within an organization (a Plan Description).">
+<area shape="rect" coords="1000,479,1205,509" href="HCIO.html#HCIO_Human-Computer+Interaction" target="" title="An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface.">
+<area shape="rect" coords="1084,20,1193,50" href="UFO.html#UFO_Action" target="" title="Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.">
+<area shape="rect" coords="1492,20,1668,50" href="UFO.html#UFO_Quality+Universal" target="" title="Quality Universals are those universals whose instances are Qualities.">
+<area shape="rect" coords="745,366,1028,396" href="HCIO.html#HCIO_Interactive+Computer+System+Participation" target="" title="The participation of an Interactive Computer System in a Human-Computer Interaction.">
+<area shape="rect" coords="1084,387,1215,417" href="HCIO.html#HCIO_User+Participation" target="" title="Event in which the user participates in a Human-Computer Interaction.">
+<area shape="rect" coords="1323,502,1371,532" href="HCIO.html#HCIO_User" target="" title="A Person who interacts with (or is expected to interact with) an Interactive Computer System.">
+<area shape="rect" coords="611,447,811,477" href="HCIO.html#HCIO_Interactive+Computer+System" target="" title="Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users.">
+<area shape="rect" coords="1346,366,1455,396" href="HCIO.html#HCIO_User+Intention" target="" title="An Intention that inheres in a User, causing him to perform intentional user actions.">
+<area shape="rect" coords="1566,439,1646,469" href="HCIO.html#HCIO_User+Goal" target="" title="The propositional content of something the User wants to achieve (User Intention).">
+<area shape="rect" coords="1273,240,1399,270" href="SysSwO.html#SysSwO_Software+Artifact" target="_blank" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
+<area shape="rect" coords="853,489,976,519" href="HCIO.html#HCIO_User+Interface" target="" title="All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system.">
+<area shape="rect" coords="1566,594,1698,624" href="HCIDO.html#HCIDO_User+Requirement" target="" title="A Requirement that refers to User Goals (i.e., a Requirement concerned with users' needs or capabilities that should be addressed by the system, in order to allow users to achieve their goals in an effective, efficient, safe and satisfying manner).
+
+">
+<area shape="rect" coords="1423,77,1734,107" href="UFO.html#UFO_Measurable+Quality+Universal" target="" title="Measurable Quality Universals are quality universals that can be objectively measured by cognitive agents or measurement devices, and it is possible to establish distances among their quality regions (@e.g., Weight and Height)."></map>
+<p align="center"><span class="font-weight-bold">Figure 2. </span>HCIEO Central View conceptual model.</p></div>
+<p align="justify" class="lead">HCI Evaluation is a Complex Action and, like that, it is an intentional event. It is caused by the HCI Evaluator Intention that inheres in the HCI Evaluator. Being an Intention, HCI Evaluaton Intention has a HCI Evaluator Goal (Goal) as propositional content. HCI Evaluator is the role played by an individual or an organization (Stakeholder) that performs the HCI Evaluation.<br/><br/>An HCI Evaluation consists in the systematic determination of the extent to which an Interactive Computer System ’s (or its User Interface ) quality characteristics (HCI Quality Characteristic) meet the HCI Evaluation Criteria applied in the evaluation. HCI Evaluation Criteria, in turn, are conditions, or capacity needed (Requirement), used to evaluate Interactive Computer System ’s HCI Quality Characteristics and may be related to User Requirements.<br/><br/>HCI Quality Characteritics are qualities (Quality Universal) of an Interactive Computer System (manifested in its software or hardware constituents). Therefore, HCI Evaluation evaluates HCI Quality Characteristics of an Interactive Computer System or, more specifically, of its User Interface.<br/><br/>An HCI Evaluation follows HCI Evaluation Method (e.g., Heuristic Method, Usability Testing), which is a Procedure that describes the actions to be performed by the HCI Evaluator in an HCI Evaluation. An HCI Evaluation Method is chosen according to the HCI Evaluator Goal and can determine the HCI Evaluation Criteria to be applied in an HCI Evaluation. To perform an HCI Evaluation it may be necessary to use an HCI Evaluation Artifact (Sw Artifact), which is an object intentionally built to specify, among others, the HCI Evaluation Criteria to be applied in the evaluation (e.g., a checklist specifying the criteria to be applied).<br/><br/>In some HCI Evaluations it is necessary to evaluate the Interactive Computer System during the Human-Computer Interaction . In this case, the User (or user representatives) of the Interactive Computer System participates in the HCI Evaluation while, at the same time, participates (User Participation ), together with the Interactive Computer System (Interactive Computer System Participation ), in the Human-Computer Interaction . When the User participates in an HCI Evaluation, it is required that this User uses the Interactive Computer System in order to achieve a certain goal (User Goal ) (e.g., send an email). While the User interacts with the Interactive Computer System to achieve his/her goal (User Goal ), the HCI Evaluator performs the HCI Evaluation, following the HCI Evaluation Method and applying HCI Evaluation Criteria to evaluate HCI Quality Characteristics of the Interactive Computer System . This scenario involves some constraints, addressed by the following axioms:<br/><br/>A6.1. <code class="text-muted">&forall; hcie: HCI Evaluation, ics: Interactive Computer System, icsp: Interactive Computer System Participation, hci: Human-Computer Interaction, user: User evaluates(hcie, ics) &and; participatesIn(user, hcie) &and; composedOf(hci, icsp) &rarr; &exist; up: User Participation participationOf(user, up) &and; composedOf(hci, up)</code><br/><br/>A6.2. <code class="text-muted">&forall; hcie: HCI Evaluation, hci: Human-Computer Interaction, hciqc: HCI Quality Characteristic, ics: Interactive Computer System, icsp: Interactive Computer System Participation evaluates(hcie, hci) ∧ evaluates(hcie,hciqc) &and; has(ics, hciqc) &and; composedOf(hci, icsp) &and; participationOf(icsp, ics) &rarr; evaluates(hcie, ics)</code><br/><br/>Moreover, in an HCI Evaluation an HCI Evaluator can act as a User . Conversely, a User can act as an HCI Evaluator. Thus, if an evaluator performs an evaluation in which he/she acts as a user, then this evaluator is also the user who participates in the evaluation. On the other hand, if a user that participates in an evaluation performs that evaluation, then he/she is also an evaluator of that evaluation. Hence, the following axiom applies:<br/><br/>A6.3. <code class="text-muted">&forall; e: HCI Evaluator, hcie: HCI Evaluation performs(e, hcie) &and; participatesIn(e, hcie) &rarr; &exist; u: User participatesIn(u, hcie) &and; (e = u)</code><br/><br/>A6.4. <code class="text-muted">&forall; u: User, hcie: HCI Evaluation participatesIn(u, hcie) &and; performs(u, hcie) &rarr; &exist; e: HCI Evaluator performs(e, hcie) &and; (e = u)</code><br/><br/>After the HCI Evaluation is performed, the HCI Evaluation Report, a Document, is created, under responsibility of the HCI Evaluator, aiming to report the evaluation results and other relevant information, such as the applied HCI Evaluation Criteria.</p>
+
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="HCIEO_Complementary+View_section">3.2.  Complementary View</h3>
+<p class="lead" align="justify"></p>
+<p class="lead">Figure 3 presents the conceptual model of the HCIEO Complementary View subontology.</p>
+<div class="container-fluid my-5" align="center"><img src="images/HCIEO Complementary View.png" width="1746" class="map img-fluid" usemap="#HCIEO Complementary View"><map name="HCIEO Complementary View">
+<area shape="rect" coords="693,813,855,843" href="HCIEO.html#HCIEO_HCI+Evaluation+Artifact" target="" title="Object intentionally made to specify evaluation criteria in the context of an evaluation.">
+<area shape="rect" coords="810,919,972,949" href="HCIEO.html#HCIEO_HCI+Evaluation+Criteria" target="" title="Conditions, or capacity needed (Requirement), used to evaluate interactive computer system’s quality characteristics. It can be determined by the HCI evaluation method of a certain HCI evaluation and may be related to user requirements.">
+<area shape="rect" coords="104,919,261,949" href="HCIEO.html#HCIEO_HCI+Evaluation+Report" target="" title="Document that presents evaluation results and other relevant information such as the considered HCI Evaluation Criteria. @Ex.: Usability test report. <source>adapted from
+_____________
+ISO/IEC 14698-5:1998
+Evaluation report: Document that presents evaluation results and other information relevant to an evaluation
+The content of evaluation reports can vary based on the objectives of the evaluation (ISO/IEC TR 25060:2010).">
+<area shape="rect" coords="693,689,878,768" href="HCIEO.html#HCIEO_HCI+Quality+Characteristic" target="" title="Characteristic expected in an Interactive Computer System (in software or hardware constituents), e.g., usability (software), screen size of a smart watch (hardware), among others. It can refer to the whole Interactive Computer System or part of it (e.g., its User Interface an Input Equipment).">
+<area shape="rect" coords="70,738,226,768" href="HCIEO.html#HCIEO_HCI+Evaluation" target="" title="Intentional event (i.e., a Complex Action) caused by the HCI Evaluator Intention and that consists in the systematic determination of the extent to which an Interactive Computer System (or its User Interface) quality characteristics meet the HCI Evaluation criteria considered in the evaluation.">
+<area shape="rect" coords="72,516,272,546" href="HCIO.html#HCIO_Interactive+Computer+System" target="" title="Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users.">
+<area shape="rect" coords="530,21,706,51" href="UFO.html#UFO_Quality+Universal" target="" title="Quality Universals are those universals whose instances are Qualities.">
+<area shape="rect" coords="463,85,774,115" href="UFO.html#UFO_Measurable+Quality+Universal" target="" title="Measurable Quality Universals are quality universals that can be objectively measured by cognitive agents or measurement devices, and it is possible to establish distances among their quality regions (@e.g., Weight and Height).">
+<area shape="rect" coords="547,266,820,296" href="http://dev.nemo.inf.ufes.br/seon/COM.html#COM_Measurable+Element" target="_blank" title="Measurable property that characterizes a Measurable Entity Type.">
+<area shape="rect" coords="943,208,1111,238" href="http://dev.nemo.inf.ufes.br/seon/COM.html#COM_Measure" target="_blank" title="Function used to associate a value (Measured Value) to a Measurable Element of a Measurable Entity. Measures quantify Measurable Elements and characterize Measurable Entity Types.">
+<area shape="rect" coords="1174,303,1334,333" href="http://dev.nemo.inf.ufes.br/seon/COM.html#COM_Measure+Unit" target="_blank" title="Unit in which measures can be expressed.">
+<area shape="rect" coords="1493,365,1602,395" href="http://dev.nemo.inf.ufes.br/seon/COM.html#COM_Scale" target="_blank" title="Delimitates the space of values possible to be associated by a Measure to a Measurable Element.">
+<area shape="rect" coords="702,374,896,404" href="http://dev.nemo.inf.ufes.br/seon/COM.html#COM_Measurement" target="_blank" title="Action that measures a Measurable Element of a Measurable Entity by applying a Measure and adopting a Measurement Procedure to obtain a Measured Value. A Measurement is performed based on a Measurement Planning Item.">
+<area shape="rect" coords="1030,435,1238,465" href="http://dev.nemo.inf.ufes.br/seon/COM.html#COM_Measured+Value" target="_blank" title="Value obtained in a Measurement.">
+<area shape="rect" coords="1061,365,1208,395" href="http://dev.nemo.inf.ufes.br/seon/COM.html#COM_Scale+Value" target="_blank" title="Value that compose a Scale.">
+<area shape="rect" coords="43,266,354,296" href="http://dev.nemo.inf.ufes.br/seon/COM.html#COM_Measurable+Entity" target="_blank" title="Anything that can be measured.">
+<area shape="rect" coords="145,85,250,115" href="UFO.html#UFO_Entity" target="" title="Entity is the topmost category of UFO, representing anything, concrete or abstract, and both types and individuals.">
+<area shape="rect" coords="894,85,1017,115" href="UFO.html#UFO_Function" target="" title="Function is a specialization of Set that maps instances of a Quality Universal to points in a Quality Structure.">
+<area shape="rect" coords="1176,85,1331,115" href="UFO.html#UFO_Unit" target="" title="">
+<area shape="rect" coords="972,20,1297,50" href="UFO.html#UFO_Measurement+Reference+Region" target="" title="">
+<area shape="rect" coords="1388,20,1728,50" href="UFO.html#UFO_Measurement+Reference+Structure" target="" title="Measurement Reference Structures act as scales based on quality structures. They are composed of Measurement Reference Regions. Measurement Reference Structures can be partitioned into spaces of the same magnitude according to a Unit.">
+<area shape="rect" coords="782,20,958,50" href="UFO.html#UFO_Event+(Perdurant)" target="" title="Events (also called perdurants) are individuals composed of temporal parts. They happen in time in the sense that they extend in time accumulating temporal parts. @Examples of events are a conversation, a football game, a symphony execution, a birthday party, or a particular business process.">
+<area shape="rect" coords="352,569,460,599" href="HCIO.html#HCIO_User+Interface" target="" title="All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system.">
+<area shape="rect" coords="547,559,752,589" href="HCIO.html#HCIO_Human-Computer+Interaction" target="" title="An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface.">
+<area shape="rect" coords="1075,611,1123,641" href="HCIO.html#HCIO_User" target="" title="A Person who interacts with (or is expected to interact with) an Interactive Computer System.">
+<area shape="rect" coords="846,559,977,589" href="HCIO.html#HCIO_User+Participation" target="" title="Event in which the user participates in a Human-Computer Interaction."></map>
+<p align="center"><span class="font-weight-bold">Figure 3. </span>HCIEO Complementary View conceptual model.</p></div>
+<p align="justify" class="lead">There are HCI Evaluations in which it is necessary to perform measurements to determine the extent to which HCI Quality characteristics of an Interactive Computer System meet HCI Evaluation Criteria. This is addressed in the conceptual model shown in Figure 6.5, which depicts a view of HCIEO that reuses concepts from COM to represent evaluations that quantify HCI Quality Characteristics.<br/><br/>Besides being Objects (grounding in UFO), Interactive Computer System and User Interface are also Measurable Entities, i.e., entities that can be measured. In this sense, HCI Quality Characteristic is subtype of Measurable Element, i.e., a measurable property that characterizes Interactive Computer System (or a User Interface ). Measures can be used to quantify HCI Quality Characteristics. For example, usability (HCI Quality Characteristic) characterizesasystem(Interactive Computer System)oritsUI(User Interface)and can be quantified, among others, by means of the number of wrong clicks or touches (Measure). HCI Evaluation Criteria can refer to Measures used to quantify HCI Quality Characteristic. For example, the criteria “the number of wrong clicks or touches must be smaller than two”, used to evaluate usability, refers to the measure number of wrong clicks or touches, which, in turn, is used to quantify usability. In this context, the Measure referred by an HCI Evaluation Criteria in an HCI Evaluation that evaluates a HCI Quality Characteristic must be a Measure used to quantify that HCI Quality Characteristic. Thus:<br/><br/>A6.5. <code class="text-muted">&forall; m: Measure, hciec: HCI Evaluation criteria, hcie: HCI Evaluation, hciqc: HCI Quality Characteristic evaluates(hcie, hciqc) &and; applies(hcie, hciec) &and; usedToEvaluate(hciec, hciqc) &and; refersTo(hciec, m) &rarr; quantifies(m, hciqc)</code><br/><br/>A Measure (e.g., time spent to log in the system) can be expressed in Measure Unit (e.g., minute) and has a Scale partitioned according to the Measure Unit and composed of the values that can be associated to the Measure. Measurement consists in collecting Measured Values to a Measure (e.g., the measurement of the time to log in the system, resulting in the value 1 minute). In an HCI Evaluation, Measurements are performed to establish Measured Values to quantify HCI Quality Characteristics.<br/><br/>When a HCI Evaluation involves measurements, the HCI Evaluation Report must consider the Measured Values.</p>
+
+</div></p>					
+			</div>
+
+			<hr>
+
+			<div class="p-5 rounded" id="conceptsdefinition">
+				<h2 class="featurette-heading">4. Concepts Definition</h2>
+				<p class="lead">The following table shows the definitions for HCIEO concepts.</p>		
+				
+				<div class="table-responsive my-5">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Concept</th>
+								<th scope="col">Definition</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td><p id="HCIEO_HCI+Evaluation"><span class="font-weight-bold">HCI Evaluation</span><a class="text-muted" href=#HCIEO_HCI+Evaluation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intentional event (i.e., a Complex Action) caused by the HCI Evaluator Intention and that consists in the systematic determination of the extent to which an Interactive Computer System (or its User Interface) quality characteristics meet the HCI Evaluation criteria considered in the evaluation.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> evaluation of the usability of the checkout system of an e-commerce web site. </span><br/><span class="font-weight-light">src.: </span><span>adapted from (ISO/IEC 14598-5:1998; ISO/IEC 25066, 2016; ISO/TS 18152, 2010; ISO/IEC TR 25060, 2010; ISO/TR 16982, 2002; ISO 9241-220, 2019).</span></p></td></tr>
+<tr><td><p id="HCIEO_HCI+Evaluation+Artifact"><span class="font-weight-bold">HCI Evaluation Artifact</span><a class="text-muted" href=#HCIEO_HCI+Evaluation+Artifact_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Object intentionally made to specify evaluation criteria in the context of an evaluation.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a checklist used during an evaluation to specify the criteria to be applied.</span></p></td></tr>
+<tr><td><p id="HCIEO_HCI+Evaluation+Criteria"><span class="font-weight-bold">HCI Evaluation Criteria</span><a class="text-muted" href=#HCIEO_HCI+Evaluation+Criteria_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Conditions, or capacity needed (Requirement), used to evaluate interactive computer system’s quality characteristics. It can be determined by the HCI evaluation method of a certain HCI evaluation and may be related to user requirements.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> total time the user spent on the first attempt to execute the task versus the time on the second attempt (the purpose of this data is to understand if the user can achieve a learning curve and on the second attempt to achieve the goal more quickly). In this case, the quality characteristic is usability, more specifically its learnability component. </span><br/><span class="font-weight-light">src.: </span><span>adapted from (ISO/IEC TR 25060, 2010; ISO 9241-220, 2019).</span></p></td></tr>
+<tr><td><p id="HCIEO_HCI+Evaluation+Method"><span class="font-weight-bold">HCI Evaluation Method</span><a class="text-muted" href=#HCIEO_HCI+Evaluation+Method_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Procedure describing the actions to be performed by the HCI Evaluator to perform a HCI Evaluation.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> heuristic evaluation, cognitive walkthroughs, standards inspection, pluralistic walkthroughs, usability test, consistency inspections, among others. </span><br/><span class="font-weight-light">src.: </span><span>adapted from (ISO/IEC 14598-5, 1998; ISO/TR 16982, 2002).</span></p></td></tr>
+<tr><td><p id="HCIEO_HCI+Evaluation+Report"><span class="font-weight-bold">HCI Evaluation Report</span><a class="text-muted" href=#HCIEO_HCI+Evaluation+Report_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document that presents evaluation results and other relevant information such as the considered HCI Evaluation Criteria. @Ex.: Usability test report. <source>adapted from_____________ISO/IEC 14698-5:1998Evaluation report: Document that presents evaluation results and other information relevant to an evaluationThe content of evaluation reports can vary based on the objectives of the evaluation (ISO/IEC TR 25060:2010).</p></td></tr>
+<tr><td><p id="HCIEO_HCI+Evaluator"><span class="font-weight-bold">HCI Evaluator</span><a class="text-muted" href=#HCIEO_HCI+Evaluator_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>HCI Evaluator & Individual or organization (Stakeholder) that performs an HCI Evaluation.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> usability specialists, developers. </span><br/><span class="font-weight-light">src.: </span><span>adapted from (ISO/TR 25060, 2010; ISO/IEC 25040, 2011).</span></p></td></tr>
+<tr><td><p id="HCIEO_HCI+Evaluator+Goal"><span class="font-weight-bold">HCI Evaluator Goal</span><a class="text-muted" href=#HCIEO_HCI+Evaluator+Goal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The evaluation intended outcome.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Make the web site login UI more usable and understandable.</span></p></td></tr>
+<tr><td><p id="HCIEO_HCI+Evaluator+Intention"><span class="font-weight-bold">HCI Evaluator Intention</span><a class="text-muted" href=#HCIEO_HCI+Evaluator+Intention_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intention that inheres in a HCI Evaluator, causing him to perform an HCI Evaluation.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the intention to evaluate an interactive computer system to find usability problems.</span></p></td></tr>
+<tr><td><p id="HCIEO_HCI+Quality+Characteristic"><span class="font-weight-bold">HCI Quality Characteristic</span><a class="text-muted" href=#HCIEO_HCI+Quality+Characteristic_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Characteristic expected in an Interactive Computer System (in software or hardware constituents), e.g., usability (software), screen size of a smart watch (hardware), among others. It can refer to the whole Interactive Computer System or part of it (e.g., its User Interface an Input Equipment).<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> usability of a smart watch, communicability of an UI login. </span><br/><span class="font-weight-light">src.: </span><span>adapted from (ISO 9241-11, 2018).</span></p></td></tr>
+
+						</tbody>
+						<caption><small>HCIEO concepts definition.</small></caption>
+					</table>
+				</div>
+
+			</div>
+
+			<hr>		
+
+			<div class="p-5 rounded" id="detailedconcepts">
+				<h2 class="featurette-heading">5. Detailed Concepts</h2>
+				<p class="lead">Human-Computer Interaction Evaluation Ontology (HCIEO) detailed concepts.</p>					
+				<hr><div class="container-fluid" id="HCIEO_HCI+Evaluation_detail"><h4><i class="bi bi-diagram-3"></i> HCIEO::HCI Evaluation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluation</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> UFO::Complex Action</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Intentional event (i.e., a Complex Action) caused by the HCI Evaluator Intention and that consists in the systematic determination of the extent to which an Interactive Computer System (or its User Interface) quality characteristics meet the HCI Evaluation criteria considered in the evaluation.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> evaluation of the usability of the checkout system of an e-commerce web site. </span><br/><span class="font-weight-bold">Source: </span><span>adapted from (ISO/IEC 14598-5:1998; ISO/IEC 25066, 2016; ISO/TS 18152, 2010; ISO/IEC TR 25060, 2010; ISO/TR 16982, 2002; ISO 9241-220, 2019).</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">HCI Evaluation (0..*) follows (1..*) HCI Evaluation Method<br/>
+HCI Evaluation (1..1) creates (1..1) HCI Evaluation Report<br/>
+HCI Evaluation (0..*) caused by (1..1) HCI Evaluator Intention<br/>
+HCI Evaluation (0..*) evaluates (1..*) HCI Quality Characteristic<br/>
+HCI Evaluation (0..*) evaluates (1..*) Interactive Computer System Participation<br/>
+HCI Evaluation (1..1) uses (0..*) HCI Evaluation Artifact<br/>
+HCI Evaluation (0..*) applies (1..*) HCI Evaluation Criteria<br/>
+HCI Evaluation (0..*) evaluates (1..*) Human-Computer Interaction<br/>
+HCI Evaluation (0..*) evaluates (1..1) Interactive Computer System<br/>
+HCI Evaluation (0..*) evaluates (1..1) User Interface<br/>
+HCI Evaluator (1..*) performs (1..*) HCI Evaluation<br/>
+User (0..*) participates in (0..*) HCI Evaluation<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluation+Artifact_detail"><h4><i class="bi bi-diagram-3"></i> HCIEO::HCI Evaluation Artifact</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluation Artifact</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SysSwO::Software Artifact</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Object intentionally made to specify evaluation criteria in the context of an evaluation.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> a checklist used during an evaluation to specify the criteria to be applied.</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">HCI Evaluation Artifact (0..*) specifies (1..*) HCI Evaluation Criteria<br/>
+HCI Evaluation (1..1) uses (0..*) HCI Evaluation Artifact<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluation+Criteria_detail"><h4><i class="bi bi-diagram-3"></i> HCIEO::HCI Evaluation Criteria</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluation Criteria</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> RSRO::Requirement</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Conditions, or capacity needed (Requirement), used to evaluate interactive computer system’s quality characteristics. It can be determined by the HCI evaluation method of a certain HCI evaluation and may be related to user requirements.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> total time the user spent on the first attempt to execute the task versus the time on the second attempt (the purpose of this data is to understand if the user can achieve a learning curve and on the second attempt to achieve the goal more quickly). In this case, the quality characteristic is usability, more specifically its learnability component. </span><br/><span class="font-weight-bold">Source: </span><span>adapted from (ISO/IEC TR 25060, 2010; ISO 9241-220, 2019).</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">HCI Evaluation Criteria (0..*) used to evaluate (1..*) HCI Quality Characteristic<br/>
+HCI Evaluation Criteria specified according to HCI Evaluator Goal<br/>
+HCI Evaluation Criteria (0..*) refers to (0..*) Measure<br/>
+HCI Evaluation Criteria (0..*) refers to (0..*) User Requirement<br/>
+HCI Evaluation (0..*) applies (1..*) HCI Evaluation Criteria<br/>
+HCI Evaluator Goal (0..*) helps to determine (1..*) HCI Evaluation Criteria<br/>
+HCI Evaluation Method (0..*) can determine (0..*) HCI Evaluation Criteria<br/>
+HCI Evaluation Report (1..*) reports (1..*) HCI Evaluation Criteria<br/>
+HCI Evaluation Artifact (0..*) specifies (1..*) HCI Evaluation Criteria<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluation+Method_detail"><h4><i class="bi bi-diagram-3"></i> HCIEO::HCI Evaluation Method</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluation Method</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Procedure</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>A Procedure describing the actions to be performed by the HCI Evaluator to perform a HCI Evaluation.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> heuristic evaluation, cognitive walkthroughs, standards inspection, pluralistic walkthroughs, usability test, consistency inspections, among others. </span><br/><span class="font-weight-bold">Source: </span><span>adapted from (ISO/IEC 14598-5, 1998; ISO/TR 16982, 2002).</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">HCI Evaluation Method (0..*) can determine (0..*) HCI Evaluation Criteria<br/>
+HCI Evaluation Method (1..*) chosen according to (0..*) HCI Evaluator Goal<br/>
+HCI Evaluation (0..*) follows (1..*) HCI Evaluation Method<br/>
+HCI Evaluator Goal (1..1) helps to choose (1..*) HCI Evaluation Method<br/>
+HCI Evaluator (1..*) choose (1..*) HCI Evaluation Method<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluation+Report_detail"><h4><i class="bi bi-diagram-3"></i> HCIEO::HCI Evaluation Report</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluation Report</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SysSwO::Document</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Document that presents evaluation results and other relevant information such as the considered HCI Evaluation Criteria. @Ex.: Usability test report. <source>adapted from_____________ISO/IEC 14698-5:1998Evaluation report: Document that presents evaluation results and other information relevant to an evaluationThe content of evaluation reports can vary based on the objectives of the evaluation (ISO/IEC TR 25060:2010).</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">HCI Evaluation Report (1..*) reports (1..*) HCI Evaluation Criteria<br/>
+HCI Evaluation Report (0..*) reports (0..*) Measured Value<br/>
+HCI Evaluation (1..1) creates (1..1) HCI Evaluation Report<br/>
+HCI Evaluator (1..*) / responsible for (1..*) HCI Evaluation Report<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluator_detail"><h4><i class="bi bi-diagram-3"></i> HCIEO::HCI Evaluator</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluator</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Stakeholder</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>HCI Evaluator & Individual or organization (Stakeholder) that performs an HCI Evaluation.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> usability specialists, developers. </span><br/><span class="font-weight-bold">Source: </span><span>adapted from (ISO/TR 25060, 2010; ISO/IEC 25040, 2011).</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">HCI Evaluator (1..*) performs (1..*) HCI Evaluation<br/>
+HCI Evaluator (1..*) / responsible for (1..*) HCI Evaluation Report<br/>
+HCI Evaluator (1..*) choose (1..*) HCI Evaluation Method<br/>
+HCI Evaluator Intention (1..*) inheres in (1..1) HCI Evaluator<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluator+Goal_detail"><h4><i class="bi bi-diagram-3"></i> HCIEO::HCI Evaluator Goal</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluator Goal</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> UFO::Goal</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>The evaluation intended outcome.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> Make the web site login UI more usable and understandable.</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">HCI Evaluator Goal (1..1) propositional content of (1..*) HCI Evaluator Intention<br/>
+HCI Evaluator Goal (0..*) helps to determine (1..*) HCI Evaluation Criteria<br/>
+HCI Evaluator Goal (1..1) helps to choose (1..*) HCI Evaluation Method<br/>
+HCI Evaluation Method (1..*) chosen according to (0..*) HCI Evaluator Goal<br/>
+HCI Evaluation Criteria specified according to HCI Evaluator Goal<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluator+Intention_detail"><h4><i class="bi bi-diagram-3"></i> HCIEO::HCI Evaluator Intention</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluator Intention</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> UFO::Intention</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Intention that inheres in a HCI Evaluator, causing him to perform an HCI Evaluation.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> the intention to evaluate an interactive computer system to find usability problems.</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">HCI Evaluator Intention (1..*) inheres in (1..1) HCI Evaluator<br/>
+HCI Evaluation (0..*) caused by (1..1) HCI Evaluator Intention<br/>
+HCI Evaluator Goal (1..1) propositional content of (1..*) HCI Evaluator Intention<br/>
+</code></p></div></div></div>
+
+<hr><div class="container-fluid" id="HCIEO_HCI+Quality+Characteristic_detail"><h4><i class="bi bi-diagram-3"></i> HCIEO::HCI Quality Characteristic</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Quality Characteristic</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> UFO::Quality</p><p><i class="bi bi-diagram-2"></i>  UFO::Measurable Quality Universal</p><p><i class="bi bi-diagram-2"></i>  COM::Measurable Element</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Characteristic expected in an Interactive Computer System (in software or hardware constituents), e.g., usability (software), screen size of a smart watch (hardware), among others. It can refer to the whole Interactive Computer System or part of it (e.g., its User Interface an Input Equipment).<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> usability of a smart watch, communicability of an UI login. </span><br/><span class="font-weight-bold">Source: </span><span>adapted from (ISO 9241-11, 2018).</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+<code class="text-muted">HCI Quality Characteristic (1..*) inheres in (1..*) Human-Computer Interaction<br/>
+HCI Evaluation (0..*) evaluates (1..*) HCI Quality Characteristic<br/>
+User Interface (1..*) /has (0..*) HCI Quality Characteristic<br/>
+Interactive Computer System (1..*) has (0..*) HCI Quality Characteristic<br/>
+HCI Evaluation Criteria (0..*) used to evaluate (1..*) HCI Quality Characteristic<br/>
+</code></p></div></div></div>
+
+
+			</div>
+			
+		</main>
+	
+    <footer class="p-5 rounded border-top">
+    	<div class="row justify-content-md-center">
+	      <div class="col-md-auto">
+	    		<h6>Copyright</h6>
+	    		<div class="d-inline">
+					  	<i class="material-icons text-muted align-middle">copyright</i>
+				  </div>
+					<div class="d-inline">
+				  	<span class="text-muted"><small> 2022 Simone Dornelas Costa</small></span>
+				  </div>
+				</div>
+				
+	    	<div class="col-md-auto">
+	  		  <h6>Powered by</h6>
+	  		  <ul class="list-unstyled text-small">
+	  		  	<li>
+	  		  		<a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank"><img src="images/logoo_nemo.svg" width="50px"><br/>
+	  		  		NEMO</a>
+	  		  	</li>
+	  		  </ul>
+	    	</div>
+
+	    	<div class="col-md-auto">
+	    		<h5>HCIEO</h5>
+	    		<ul class="list-unstyled text-small">
+	    			<li>
+	    				<small>
+	    					<a class="text-muted" href="#">Human-Computer Interaction Evaluation Ontology</a>
+	    				</small>	
+	    			</li>
+	    			<li>
+	    				<small>
+	    					<a class="text-muted" href="#">Domain ontology from HCI-ON</a>
+    					</small>
+	    			</li>
+	    			<li>
+	    				<small>
+		    				<a class="text-muted" href="#">version 1.0</a>
+	    				</small>
+	    			</li>
+	    		</ul>
+	    	</div>
+
+    		<div class="col-md-auto">
+	    		<h6>Contact us</h6>
+	    		<ul class="list-unstyled text-small">
+	    			<li>
+	    				<div class="d-inline">
+	    					<i class="material-icons text-muted align-middle">email</i>
+	    				</div>
+	    				<div class="d-inline">
+	    					<a href="mailto:simone.costa@ufes.br" class="text-muted"><small>simone.costa@ufes.br</small></a>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="d-inline">
+	    					<i class="material-icons text-muted align-middle">email</i>
+	  					</div>
+	    				<div class="d-inline">
+	    					<a href="mailto:monalessa@inf.ufes.br" class="text-muted"><small>monalessa@inf.ufes.br</small></a>
+	    				</div>
+	    			</li>
+	    		</ul>
+	    	</div>
+
+	    </div>
+	    
+			<div class="row mt-3 justify-content-md-center">
+				<div class="col-md-auto">
+					<small>
+						<span class="text-muted">
+						Wed Dec 22 20:25:05 BRT 2021
+						</span>
+					</small>
+				</div>
+			</div>
+
+    </footer>
+	   
+	    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	  <script type="text/javascript" src="bootstrap/jquery/jquery-3.5.1.slim.min.js"></script>
+
+	  <script type="text/javascript" src="bootstrap/js/popper-1.16.1.min.js"></script>
+
+	  <script type="text/javascript" src="bootstrap/4.6.1-dist/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="maphilight.js"></script>
+
+		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
+			$(function() {
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  //location.reload();
+				});
+			});			
+			
+		</script>
+	</body>
+</html>

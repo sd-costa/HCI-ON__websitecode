@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <meta name="description" content="">
+      <meta name="author" content="Simone Dornelas Costa">
+      <meta name="generator" content="Simone Dornelas Costa">
+      <title>HCI-ON</title>
+      <!-- favicon -->
+      <link rel="icon" href="images/favicon.svg" sizes="32x32" type="image/svg">
+
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" type="text/css" href="bootstrap/4.6.1-dist/css/bootstrap.min.css">
+      
+      
+      <!-- ICONS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+      <style>   
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .spinner-grow  {
+        animation-duration: 9.9s;
+        width: 0.5rem;
+        height: 0.5rem;
+        margin-left: 5px;
+      }
+
+      .spinner-fixed {
+        display: inline-block;
+        width: 0.5rem;
+        height: 0.5rem;
+        margin-left: 5px;
+        vertical-align: -0.125em;
+        background-color: currentColor;
+        border-radius: 50%;
+      }
+      </style>
+     
+     <!-- Custom styles for this template -->
+     <link href="bootstrap/css/carousel.css" rel="stylesheet">
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WXTXYYCXMP');
+      </script>
+
+    </head>
+
+  <body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="HCI-ON.html">HCI-ON</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            The Network
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="HCI-ON.html">HCI-ON</a>
+            <a class="dropdown-item" href="HCI-ON.html#architecture">Architecture</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionmechanism">Evolution Mechanism</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionseon">Relationship with SEON</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Networked Ontologies
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        
+            <a class="dropdown-item disabled">Foundational Layer</a>
+            <a class="dropdown-item" href="UFO.html">UFO</a>
+
+            <a class="dropdown-item disabled">Core Layer</a>
+            <a class="dropdown-item" href="HCIO.html">HCIO</a>
+
+            <a class="dropdown-item disabled">Domain Layer</a>
+            <a class="dropdown-item" href="HCIDO.html">HCIDO</a>
+            <a class="dropdown-item" href="HCIEO.html">HCIEO</a>
+            <a class="dropdown-item" href="UIT&EO.html">UIT&EO</a>
+            <a class="dropdown-item" href="HCIMO.html">HCIMO</a>
+            <a class="dropdown-item" href="CUO.html">CUO</a>
+            <a class="dropdown-item" href="UCO.html">UCO</a>
+            <a class="dropdown-item" href="HCIQCO.html">HCIQCO</a>
+            
+          </div>
+        </li>
+
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a> 
+            <a class="dropdown-item" href="NetworkGraph.html">Graph</a>
+            <a class="dropdown-item" href="NetworkStats.html">Stats</a>
+            <a class="dropdown-item" href="videos.html">Videos</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+       
+  <main class="container-fluid">
+      <div class="bg-light p-5 rounded">
+        <h1 class="featurette-heading">The Human-Computer Interaction Ontology Concepts Search</h1>
+      </div>
+
+      <hr>
+
+      <div class="d-flex justify-content-center my-5 container">
+        <div class="spinner-grow text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+
+      <div class="container pb-1">
+        <div class="form-group">
+          <label for="inputdefault" class="float-right">
+          </label>
+          <input class="form-control" id="inputdefault" type="text" placeholder="Concept Name">
+        </div>
+        <button type="submit" class="btn btn-dark mb-2 float-right" id="search">Search</button>
+      </div>
+
+      
+
+      <div class="container my-5 rounded" id="result-number">
+      </div>
+
+      <div id="result-content" class="container my-5 rounded">
+      </div>
+
+  </main>
+
+  <footer class="p-5 rounded border-top">
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <h6>Copyright</h6>
+        <div class="d-inline">
+            <i class="material-icons text-muted align-middle">copyright</i>
+        </div>
+        <div class="d-inline">
+          <span class="text-muted"><small> 2022 Simone Dornelas Costa</small></span>
+        </div>
+      </div>
+      
+      <div class="col-md-auto">
+        <h6>Powered by</h6>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank"><img src="images/logoo_nemo.svg" width="50px"><br/>
+            NEMO</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-auto">
+        <h6>Contact us</h6>
+        <ul class="list-unstyled text-small">
+          <li>
+            <div class="d-inline">
+              <i class="material-icons text-muted align-middle">email</i>
+            </div>
+            <div class="d-inline">
+              <a href="mailto:simone.costa@ufes.br" class="text-muted"><small>simone.costa@ufes.br</small></a>
+            </div>
+          </li>
+          <li>
+            <div class="d-inline">
+              <i class="material-icons text-muted align-middle">email</i>
+            </div>
+            <div class="d-inline">
+              <a href="mailto:monalessa@inf.ufes.br" class="text-muted"><small>monalessa@inf.ufes.br</small></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="row mt-3 justify-content-md-center">
+      <div class="col-md-auto">
+        <small>
+          <span class="text-muted">
+          @date
+          </span>
+        </small>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <script type="text/javascript" src="bootstrap/jquery/jquery-3.5.1.slim.min.js"></script>
+
+  <script type="text/javascript" src="bootstrap/js/popper-1.16.1.min.js"></script>
+
+  <script type="text/javascript" src="bootstrap/4.6.1-dist/js/bootstrap.min.js"></script>
+
+
+  <script type="text/javascript" src="ConceptsHash.js"></script>
+  
+  <script type="text/javascript">
+    $("#search").click(function(){
+      var results = new Set();
+
+      console.log(results);
+      //Simone
+      //eliminate duplicated concepts
+      $.each( concepts, function( key, value ) {
+        if(key.toLowerCase().includes($("#inputdefault").val().toLowerCase()) || value["def"].toLowerCase().includes($("#inputdefault").val().toLowerCase())){
+          results.add({
+            "key" : key,
+            "def" : value["def"],
+            "ref" : value["ref"],
+            "onto": value["onto"],
+            "net": value["net"]
+          }); 
+        }       
+      });
+      
+      var html = '';
+      var resultnumber = '';
+      resultnumber = "<div class=\"d-flex justify-content-center my-5 container\"><div class=\"spinner-fixed text-primary\" role=\"status\"><span class=\"sr-only\">Loading...</span></div><div class=\"spinner-fixed text-secondary\" role=\"status\"><span class=\"sr-only\">Loading...</span></div><div class=\"spinner-fixed text-success\" role=\"status\"><span class=\"sr-only\">Loading...</span></div><div class=\"spinner-fixed text-danger\" role=\"status\"><span class=\"sr-only\">Loading...</span></div><div class=\"spinner-fixed text-warning\" role=\"status\"><span class=\"sr-only\">Loading...</span></div><div class=\"spinner-fixed text-info\" role=\"status\"><span class=\"sr-only\">Loading...</span></div><div class=\"spinner-fixed text-light\" role=\"status\"><span class=\"sr-only\">Loading...</span></div><div class=\"spinner-fixed text-dark\" role=\"status\"><span class=\"sr-only\">Loading...</span></div></div>";
+
+      resultnumber += '<br><br><small><code class=\"text-muted\">Concepts/definitions matching result: <mark>'+ results.size + "</mark></code><p><em><code class=\"text-muted\">* the search result is based on HCI-ON, SEON and UFO concepts</code></em></p></small>";
+      html = "\n<div class=\"table-responsive\">\n<table class=\"table table-hover\">\n<thead>\n<tr>\n<th scope=\"col\">Concept</th>\n<th scope=\"col\">Description</th>\n<th scope=\"col\">Ontology</th>\n<th scope=\"col\">Network</th>\n</tr>\n</thead>\n<tbody>\n";
+                
+      for (value of results.values()) {
+
+          html += '<tr>'+
+          '\n<td><p><a class=\"text-muted\" href="'+value.ref+'" target=\"_blank\">'+value.key+'</a></p></td>\n<td><p>'+value.def+'</p></td>\n<td><p>'+value.onto+'</p></td>\n<td><p>'+value.net+'</p></td>\n';
+      }
+      
+      console.log(results);
+      
+      html += "\n</tbody>\n</table>\n<caption><small>Search result.</small></caption>\n</div>"; 
+
+      //$("#result-content").empty();
+      $('div#result-number').html(resultnumber);
+      $('div#result-content').html(html);
+    });
+  </script>
+
+</body>
+</html>

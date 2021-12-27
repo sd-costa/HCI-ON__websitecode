@@ -36,6 +36,25 @@
           font-size: 3.5rem;
         }
       }
+
+      pre {
+        display: block;
+        padding: 9.5px;
+        margin: 0 0 10px;
+        font-size: 13px;
+        line-height: 1.42857143;
+        color: #333;
+        word-break: break-all;
+        word-wrap: break-word;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .csl-entry {
+        font-size: 15px;
+        margin: 0 0 10px;
+      }
       </style>
      
      <!-- Custom styles for this template -->
@@ -232,7 +251,7 @@ Adapted from [Guarino, N., & Melone, M. R. S. (2015)]">
 <area shape="rect" coords="101,793,281,823" href="HCIDO.html#HCIDO_Mental+HCI+Design+Object" target="" title="A Mental Software Design Object specified by a Mental HCI Design Specification that refers to an Interactive Software System being designed (i.e., what is expected to exist after the HCI design effort)">
 <area shape="rect" coords="656,878,916,908" href="HCIDO.html#HCIDO_Presentational+HCI+Design+Component" target="" title="A HCI Design Component that implements Mental User Observable States and aims to present information that can be perceived through users’ senses">
 <area shape="rect" coords="396,434,561,464" href="HCIO.html#HCIO_User+Interface+Program" target="" title="Program that deals with aspects related to the User Interface.">
-<area shape="rect" coords="648,344,756,374" href="HCIO.html#HCIO_User+Interface" target="" title="All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system.">
+<area shape="rect" coords="649,344,756,374" href="HCIO.html#HCIO_User+Interface" target="" title="All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system.">
 <area shape="rect" coords="882,344,1017,374" href="HCIO.html#HCIO_Output+Equipment" target="" title="Hardware Equipment used to transmit or display information or data, communicating output to Users.">
 <area shape="rect" coords="1327,344,1485,374" href="HCIO.html#HCIO_User+Observable+State" target="" title="A situation (an Observable State) perceivable by Users, typically achieved as the result (output) of a Program Copy Execution, communicated or presented by an Output Equipment.">
 <area shape="rect" coords="1086,427,1269,457" href="HCIO.html#HCIO_User+Input+Resulting+State" target="" title="A situation achieved as the result of User’s input (data or information) received by means of an Input Equipment.">
@@ -475,6 +494,8 @@ HCI Design Choice (0..*) /motivated by (0..*) User Requirement Artifact<br/>
 
 			</div>
 			
+			<!-- COPY and PASTE (BEGIN till END) domainontologies_related_publications.html here-->
+
 		</main>
 	
     <footer class="p-5 rounded border-top">
@@ -548,7 +569,7 @@ HCI Design Choice (0..*) /motivated by (0..*) User Requirement Artifact<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Wed Dec 22 20:25:05 BRT 2021
+						Mon Dec 27 17:56:31 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -561,11 +582,60 @@ HCI Design Choice (0..*) /motivated by (0..*) User Requirement Artifact<br/>
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 	  <script type="text/javascript" src="bootstrap/jquery/jquery-3.5.1.slim.min.js"></script>
-
 	  <script type="text/javascript" src="bootstrap/js/popper-1.16.1.min.js"></script>
-
 	  <script type="text/javascript" src="bootstrap/4.6.1-dist/js/bootstrap.min.js"></script>
+	  <script src="bootstrap/js/clipboard.min.js"></script>
 
+  	<script type="text/javascript">
+	    // Tooltip
+	    console.log("teste");
+
+	    $('.btn-tooltip').tooltip({
+	      trigger: 'click',
+	      placement: 'bottom'
+	    });
+
+	    function setTooltip(message) {
+	      $('.btn-tooltip').tooltip('hide')
+	        .attr('data-original-title', message)
+	        .tooltip('show');
+	    }
+
+	    function hideTooltip() {
+	      setTimeout(function() {
+	        $('.btn-tooltip').tooltip('hide');
+	      }, 1000);
+	    }
+
+	    // Clipboard
+	    var clipboard = new ClipboardJS('.btn-tooltip');
+
+	    clipboard.on('success', function(e) {
+	         setTooltip('copied!');
+	         hideTooltip();
+	     
+	    });
+
+	    clipboard.on('error', function(e) {
+	        setTooltip('failed!');
+	        hideTooltip();
+	      
+	    });
+	     
+
+
+	    // var clipboard = new ClipboardJS('button');
+
+	    // clipboard.on('success', function(e) {
+	    //   setTooltip('Copied!');
+	    //   hideTooltip();
+	    // });
+
+	    // clipboard.on('error', function(e) {
+	    //   setTooltip('Failed!');
+	    //   hideTooltip();
+	    // });
+	  </script>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>

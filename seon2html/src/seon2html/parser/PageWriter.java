@@ -55,6 +55,8 @@ public class PageWriter {
 		generateSearchFramesPage();
 		generateIndexPage();
 		generateVideosPage();
+		generatePublicationsPage();
+		generauteAuthorshipPage();
 
 		// Copying the static page files
 		recoverStaticPages();
@@ -387,7 +389,7 @@ public class PageWriter {
 		Utils.stringToFile("./page/index.html", html);
 	}
 
-	/* Reads the Network and creates the Index page. */
+	/* Reads the Network and creates the videos page. */
 	private void generateVideosPage() {
 		// Reading the HTML template
 		String html = Utils.fileToString("./resources/Template.videos.html");
@@ -397,6 +399,30 @@ public class PageWriter {
 
 		// Writing the HTML page
 		Utils.stringToFile("./page/videos.html", html);
+	}
+
+	/* Reads the Network and creates the publications page. */
+	private void generatePublicationsPage() {
+		// Reading the HTML template
+		String html = Utils.fileToString("./resources/Template.publications.html");
+
+
+		html = html.replace("@date", (new Date()).toString());
+
+		// Writing the HTML page
+		Utils.stringToFile("./page/publications.html", html);
+	}
+
+	/* Reads the Network and creates the authorship page. */
+	private void generauteAuthorshipPage() {
+		// Reading the HTML template
+		String html = Utils.fileToString("./resources/Template.authorship.html");
+
+
+		html = html.replace("@date", (new Date()).toString());
+
+		// Writing the HTML page
+		Utils.stringToFile("./page/authorship.html", html);
 	}
 
 	/* Reads the Network and creates the Stats page. */

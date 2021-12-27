@@ -889,13 +889,13 @@
 	    var clipboard = new ClipboardJS('.btn-tooltip');
 
 	    clipboard.on('success', function(e) {
-	         setTooltip('Copied!');
+	         setTooltip('copied!');
 	         hideTooltip();
 	     
 	    });
 
 	    clipboard.on('error', function(e) {
-	        setTooltip('Failed!');
+	        setTooltip('failed!');
 	        hideTooltip();
 	      
 	    });

@@ -123,6 +123,10 @@
           </div>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link" href="publications.html">Publications</a>
+        </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
             Features
@@ -133,7 +137,6 @@
             <a class="dropdown-item" href="NetworkStats.html">Stats</a>
             <a class="dropdown-item" href="videos.html">Videos</a>
             <a class="dropdown-item" href="authorship.html">Authorship Info</a>
-            <a class="dropdown-item" href="publications.html">Publications</a>
           </div>
         </li>
       </ul>
@@ -144,7 +147,12 @@
 
 	<div class="bg-light p-5 rounded">
 		<h1 class="featurette-heading">HCI-ON: The Human-Computer Interaction Ontology Network</h1>
-		<p class="lead text-right"><i class="bi bi-star"></i><i class="bi bi-star-half"></i><i class="bi bi-star-fill"></i></p>
+		<p class="lead text-right"><i class="bi bi-quote">The Network</i></p>
+
+    <small><i class="bi bi-dot">HCI-ON published paper</i></small>
+    
+    <!-- Acrescentar manualmente -->
+    <p><small><i class="bi bi-pin-fill"> Costa, S. D., Barcellos, M. P., Falbo, R. de A., & Castro, M. V. H. B. (2020). Towards an Ontology Network on Human-Computer Interaction. In G. Dobbie, U. Frank, G. Kappel, S. W. Liddle, & H. C. Mayr (Eds.), Proceedings of the 39th International Conference on Conceptual Modeling (pp. 331–341). Springer International Publishing. <a class="text-dark" href="https://doi.org/10.1007/978-3-030-62522-1_24" target="_blank">10.1007/978-3-030-62522-1_24</a></i></small></p>
 	</div>
 
 	<hr>
@@ -211,7 +219,7 @@
 	<hr>
 	
 	<div class="p-5 rounded" id="hcionfl">
-		<p><i class="bi bi-star"></i></p>
+		<p><i class="bi bi-pin"></i></p>
 		<h3 class="featurette-heading">Foundational Layer</h3>
 		<p align="justify" class="lead">At the top of HCI-ON, sustaining the network, is the Unified Foundational Ontology (UFO) (<a class="text-muted" href="#guizzardi2005">GUIZZARDI, 2005</a>). UFO is divided into three parts: an ontology of endurants (objects) (<a class="text-muted" href="#guizzardi2005">GUIZZARDI, 2005</a>), an ontology of perdurants (events) (<a class="text-muted" href="#guizzardi2013">GUIZZARDI et al., 2013</a>), and an ontology of social entities (<a class="text-muted" href="#guizzardi2008">GUIZZARDI; FALBO; GUIZZARDI, 2008</a>). Its ontological distinctions are used for classifying HCI-ON concepts, e.g., as objects, actions, quality, agents, roles, goals and so on. UFO provides the necessary grounding for the concepts and relations of all networked ontologies. Although UFO is incorporated as an essential part of the ON, it is not under the HCI-ON control.</p>		
 	</div>
@@ -219,7 +227,7 @@
 	<hr>
 	
 	<div class="p-5 rounded" id="hcioncl">
-		<p><i class="bi bi-star-half"></i></p>
+		<p><i class="bi bi-pin"></i></p>
 		<h3 class="featurette-heading">Core Layer</h3>
 		<p align="justify" class="lead">In the center of HCI-ON, providing the HCI core knowledge for the network, there is the Human-Computer Interaction Ontology (HCIO). HCIO is a core ontology developed based on a set of HCI theories and literature. It captures that interactive computer system have a complex artifactual nature, being constituted by software artifacts of different nature. Its purpose is to clarify the main notions and establish an explicit common and shared conceptualization about the HCI phenomenon. HCIO describes what an interactive system is, which types of actions users perform when interacting with an interactive system and, finally, what a human-computer interaction is. It is at the heart of HCI-ON, since it includes important concepts for talking about core aspects of HCI (e.g., to talk about HCI design or evaluation, it is necessary to refer to Interactive Computer System) (<a class="text-muted" href="#costa2020-HCION">COSTA et al., 2020</a>).</p>
 	</div>
@@ -227,7 +235,7 @@
 	<hr>
 	
 	<div class="p-5 rounded" id="hciondl">
-		<p><i class="bi bi-star-fill"></i></p>
+		<p><i class="bi bi-pin"></i></p>
 		<h3 class="featurette-heading">Domain Layer</h3>
 		<p align="justify" class="lead">Under the foundational and core layers, HCI-ON places the domain ontologies. As we explained before, this layer contains well-founded domain ontologies and aligned domain ontologies, organized in two sub-layers.</p>
 	</div>
@@ -236,7 +244,7 @@
 	<hr>
 	
 	<div class="p-5 rounded" id="hcionwfdsl">
-		<p><small><i class="bi bi-star-fill"></i></small></p>
+		<p><small><i class="bi bi-pin"></i></small></p>
 		<h4 class="featurette-heading">Well-founded Domain-specific Layer</h4>
 		<p align="justify" class="lead">Well-founded domain ontologies encompass HCI sub-domains (e.g., HCI design, HCI evaluation, user interface, user characterization), are grounded in UFO and reuse concepts from HCIO. They are connected to the network through dependency relationships. Currently, there are seven well-founded domain ontologies (some of them under development): HCI Design Ontology (HCIDO) (<a class="text-muted" href="#costa2020-HCION">COSTA et al., 2020</a>; <a class="text-muted" href="#castro2021thesis">CASTRO, 2021</a>); HCI Evaluation Ontology (HCIEO) (presented in Chapter 6); UI Types and Elements Ontology (UIT&EO); HCI Modality Ontology (HCIMO); Context of Use Ontology (CUO); User Characterization Ontology (UCO), and HCI Quality Characteristics Ontology (HCIQCO). HCIDO and HCIEO address aspects related to, respectively, HCI design and evaluation, such as the process, produced artifacts and stakeholders, among others. HCIMO treats, in a general way, HCI styles/paradigms (modalities of interaction). It connects to UIT&EO to indicate Input and Output (I/O) devices and types of interface used in these approaches. UIT&EO addresses interface types and their elements, associating them with the possible types of I/O equipment to be used in each element. CUO describes the elements that characterize a context of use, describing physical and social environments in which the interaction occurs, such as users involved in the interaction, tasks in which the interaction occurs and involved equipment (e.g., hardware, software). UCO treats, in a general way, aspects of user profile and characteristics that are important in the context of HCI domain, such as user’s needs, preferences, disability, capacity, impairments.</p>
 		<p align="justify" class="lead">Finally, HCIQCO describes quality characteristics of user interface or interactive computer system (e.g., usability, communicability). The decision on which well-founded domain ontologies we should develop was made in order to cover relevant aspects of the HCI domain, providing knowledge to talk about the whole life cycle of an HCI project, ranging from the HCI design, user interface, modalities of interaction, HCI evaluation to context of use.</p>
@@ -245,7 +253,7 @@
 	<hr>
 	
 	<div class="p-5 rounded" id="hcionadsl">
-		<p><small><i class="bi bi-star-fill"></i></small></p>
+		<p><small><i class="bi bi-pin"></i></small></p>
 		<h2 class="featurette-heading">Aligned Domain-specific Layer</h2>
 		<p align="justify" class="lead">Aligned domain ontologies refer to existing HCI ontologies that are connected to HCI-ON as they are. They are not grounded in UFO and are connected to the network through alignment relationships. As we presented before, currently, there are 35 aligned domain ontologies (the ones we found in the secondary study) in HCI-ON.</p>
 
@@ -313,7 +321,7 @@
 	<hr>
 	
 	<div class="p-5 rounded" id="hcionseon">
-		<h2 class="featurette-heading">HCI-ON's & SEON </h2>
+		<h2 class="featurette-heading">HCI-ON & SEON </h2>
 		<p align="justify" class="lead">Since several HCI concepts are related to Software Engineering, HCI-ON is integrated to SEON (Software Engineering Ontology Network) (<a class="text-muted" href="#ruy2016">RUY et al., 2016</a>). SEON defines concepts such as software, hardware, equipment, requirements, stakeholder among others that are relevant to HCI. For example, to talk about interactive systems, user and user group and user requirements concepts addressed in SEON are necessary.</p>
 		<p align="justify" class="lead">SEON has been developed over the years and provides a well-grounded network of SE reference ontologies. It is important to highlight that as HCI-ON evolves, with new HCI networked ontologies, there is a tendency for this integration to become increasingly stronger. New HCI ontologies mean new concepts and if they are related to software engineering concepts, it is therefore of the utmost importance that SEON concepts are reused.</p>
 		<div class="d-flex justify-content-center my-5">

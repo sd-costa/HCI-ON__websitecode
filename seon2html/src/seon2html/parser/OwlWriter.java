@@ -38,7 +38,7 @@ public class OwlWriter {
 	private OWLOntologyManager		manager		= OWLManager.createOWLOntologyManager();
 	private OWLDataFactory			factory;
 	private OWLOntology				ontology;
-	private final String			nameSpace	= "dev.nemo.inf.ufes.br/seon/SEON.owl#";
+	private final String			nameSpace	= "dev.nemo.inf.ufes.br/hcion/HCIONandSEON.owl#";
 
 	/* Generates all the HTML Seon Pages. */
 	public void generateSeonOwl(Package seon) {
@@ -64,7 +64,7 @@ public class OwlWriter {
 		// Writing the OWL file
 		OutputStream output;
 		try {
-			output = new FileOutputStream("./page/SEON.owl");
+			output = new FileOutputStream("./page/HCIONandSEON.owl");
 			manager.saveOntology(ontology, output);
 		} catch (FileNotFoundException | OWLOntologyStorageException e) {
 			e.printStackTrace();

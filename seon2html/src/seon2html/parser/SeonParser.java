@@ -49,12 +49,12 @@ public class SeonParser {
 		pwriter.generateSeonPages(seon);
 
 		// Reading the Seon Model and generating the OWL file
-		//OwlWriter owriter = new OwlWriter();
-		//owriter.generateSeonOwl(seon);
+		OwlWriter owriter = new OwlWriter();
+		owriter.generateSeonOwl(seon);
 		
 		// Reading the Seon Model and generating data for graph
-		//DataWriter gdwriter = new DataWriter();
-		//gdwriter.generateDataFiles(seon);
+		DataWriter gdwriter = new DataWriter();
+		gdwriter.generateDataFiles(seon);
 
 		System.out.print("\nTHE END! (" + (System.currentTimeMillis() - start) / 1000.0 + "s)");
 		// finishMessage();
